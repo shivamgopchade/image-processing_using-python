@@ -409,15 +409,8 @@ class preprocess(object):
         return dict
 
 
-l='C:/Users/91751/PycharmProjects/DB/img-procs/ir_test/'
+l='<ENTER PATH FOR IMAGES DIRECTORY>'
 obj1=preprocess(l)  #instantiate object of class
 #now perform operations using obj1
 
-rdic=obj1.translate(50,50)
-rarray=rdic[obj1.flist[0]]
-rimg=Image.fromarray(rarray)
-rimg.show()
-rarray=obj1.translate1(50,50)[0]
-rimg=Image.fromarray(rarray)
-rimg.show()
 
